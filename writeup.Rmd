@@ -32,3 +32,12 @@ ggplot(data,aes(y=SIMS,x=ARM))+
 
 
 ## Numerical Descriptive Results
+
+```{r}
+cor(ARM~GRIP,data=data)
+```
+
+
+
+
+
