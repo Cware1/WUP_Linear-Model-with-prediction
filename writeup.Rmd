@@ -1,0 +1,14 @@
+---
+title: "writeup.rmd"
+author: "Cleo Ware"
+date: "Fall 2023"
+output: html_document
+---
+
+```{r include=FALSE,echo=FALSE}
+require(tidyverse)
+require(tigerstats)
+data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE)  
+```
+
+
