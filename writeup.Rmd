@@ -19,6 +19,16 @@ We are looking for correlations in the data.
 
 We will be using CanP helper file Num~Num to help us run test on the data we've imported.
 
+# Results
 
 
 
+## Graphical Descriptive Results
+```{r}
+ggplot(data,aes(y=SIMS,x=ARM))+
+  geom_point()
+```
+
+
+
+## Numerical Descriptive Results
