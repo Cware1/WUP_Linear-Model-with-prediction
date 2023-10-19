@@ -46,3 +46,6 @@ model.1 <- lm(ARM~GRIP,data=data)
 summary.lm(model.1)
 ```
 
+
+
+# Discussion and Conclusion
