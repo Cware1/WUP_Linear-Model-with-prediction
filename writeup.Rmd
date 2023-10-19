@@ -39,5 +39,10 @@ cor(ARM~GRIP,data=data)
 
 
 
+## Inferential Results
 
+```{r}
+model.1 <- lm(ARM~GRIP,data=data)
+summary.lm(model.1)
+```
 
