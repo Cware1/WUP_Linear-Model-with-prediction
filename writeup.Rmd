@@ -15,5 +15,10 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 We are looking for correlations in the data.
 
+# Methods
+
+We will be using CanP helper file Num~Num to help us run test on the data we've imported.
+
+
 
 
