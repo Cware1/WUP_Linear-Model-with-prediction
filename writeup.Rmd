@@ -11,4 +11,9 @@ require(tigerstats)
 data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE)  
 ```
 
+# Introduction
+
+We are looking for correlations in the data.
+
+
 
