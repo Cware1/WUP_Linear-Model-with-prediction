@@ -25,8 +25,15 @@ We will be using CanP helper file Num~Num to help us run test on the data we've 
 
 ## Graphical Descriptive Results
 ```{r}
-ggplot(data,aes(y=SIMS,x=ARM))+
-  geom_point()
+ggplot(data,aes(y=ARM,x=SIMS))+
+  geom_point()+
+  geom_smooth(method=lm)
+ggplot(data,aes(y=GRIP,x=SIMS))+
+  geom_point()+
+  geom_smooth(method=lm)
+ggplot(data,aes(y=ARM+GRIP,x=SIMS))+
+  geom_point()+
+  geom_smooth(method=lm)
 ```
 
 
@@ -34,7 +41,9 @@ ggplot(data,aes(y=SIMS,x=ARM))+
 ## Numerical Descriptive Results
 
 ```{r}
-cor(ARM~GRIP,data=data)
+cor(SIMS~ARM,data=data)
+cor(SIMS~GRIP,data=data)
+cor(SIMS~ARM+GRIP,data=data)
 ```
 
 
@@ -49,3 +58,6 @@ summary.lm(model.1)
 
 
 # Discussion and Conclusion
+
+
+
