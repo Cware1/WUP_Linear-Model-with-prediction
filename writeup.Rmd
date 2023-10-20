@@ -12,12 +12,11 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ```
 
 # Introduction
-
 We are looking for correlations in the data.
 
 # Methods
 
-We will be using CanP helper file Num~Num to help us run test on the data we've imported.
+We will be using CandP helper file Num~Num to help us run test on the data we've imported to see if theres a difference in data.
 
 # Results
 
@@ -36,7 +35,7 @@ ggplot(data,aes(y=ARM+GRIP,x=SIMS))+
   geom_smooth(method=lm)
 ```
 
-
+made scatterplots 
 
 ## Numerical Descriptive Results
 
@@ -59,8 +58,9 @@ model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
 
-
-
+Based on the data shown, model 3 is still the best option. Its the closest to one.
+Residual standard error is the lowest. And adjusted R-squared is the closest to 
+one
 # Discussion and Conclusion
 
 
