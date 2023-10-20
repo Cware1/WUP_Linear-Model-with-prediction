@@ -46,13 +46,17 @@ cor(SIMS~GRIP,data=data)
 cor(SIMS~ARM+GRIP,data=data)
 ```
 
-
+Model 3 is the best.:)
 
 ## Inferential Results
 
 ```{r}
-model.1 <- lm(ARM~GRIP,data=data)
+model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
 ```
 
 
