@@ -35,7 +35,7 @@ ggplot(data,aes(y=ARM+GRIP,x=SIMS))+
   geom_smooth(method=lm)
 ```
 
-made scatterplots 
+made three scatterplots of the data
 
 ## Numerical Descriptive Results
 
@@ -45,7 +45,7 @@ cor(SIMS~GRIP,data=data)
 cor(SIMS~ARM+GRIP,data=data)
 ```
 
-Model 3 is the best.:)
+Model 3 appears to be the best model
 
 ## Inferential Results
 
@@ -63,5 +63,12 @@ Residual standard error is the lowest. And adjusted R-squared is the closest to
 one
 # Discussion and Conclusion
 
+First we used CandP helper file Num~Num to help us run test on the data we've imported.
+
+Then, we made a scatterplot for the three different data sets.
+
+Based on the data shown, model 3 is still the best option. Its the closest to one.
+Residual standard error is the lowest. And adjusted R-squared is the closest to 
+one.
 
 
